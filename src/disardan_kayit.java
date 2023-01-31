@@ -33,7 +33,7 @@ public class disardan_kayit {
         Thread.sleep(1000);
         System.out.println("Kullanici Adi Girildi");
 
-        driver.findElement(By.id("register_email")).sendKeys("emine12@gmail.com");
+        driver.findElement(By.id("register_email")).sendKeys("emine13@gmail.com");
         Thread.sleep(1000);
         System.out.println("Email Girildi");
 

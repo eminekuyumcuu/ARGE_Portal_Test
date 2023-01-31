@@ -71,7 +71,7 @@ public class yeni_proje_ekleme {
 
         Thread.sleep(2000);
 
-        driver.findElement(By.id("name")).sendKeys("Emine Test Proje");
+        driver.findElement(By.id("name")).sendKeys("adsadsaddsa"); //Proje Adı
 
         System.out.println("8. Proje adı girildi.");
 
@@ -255,35 +255,36 @@ public class yeni_proje_ekleme {
         driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/button[1]")).click();
 
         Thread.sleep(2000);
-
+        for (int i=1;  i<10; i++) {
         driver.findElement(By.xpath("//*[@id=\"projectStakeholders\"]/div/div/div/button")).click();
 
         Thread.sleep(2000);
 
-        WebElement paydasturu = driver.findElement(By.id("stakeholder_id"));
-        new Select(paydasturu).selectByValue("1");
 
-        Thread.sleep(2000);
+    WebElement paydasturu = driver.findElement(By.id("stakeholder_id"));
+    new Select(paydasturu).selectByValue("1");
 
-        driver.findElement(By.id("stakeholder_title")).sendKeys("SAKARYA EDAŞ");
+    Thread.sleep(2000);
 
-        Thread.sleep(2000);
+    driver.findElement(By.id("stakeholder_title")).sendKeys("SAKARYA EDAŞ");
 
-        driver.findElement(By.className("custom-control-label")).click();
+    Thread.sleep(2000);
 
-        Thread.sleep(2000);
+    driver.findElement(By.className("custom-control-label")).click();
 
-        driver.findElement(By.id("project_stakeholder_save_btn")).click();
+    Thread.sleep(2000);
 
-        Thread.sleep(2000);
+    driver.findElement(By.id("project_stakeholder_save_btn")).click();
 
-        driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/button[1]")).click();
+    Thread.sleep(2000);
 
-        Thread.sleep(2000);
+    driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/button[1]")).click();
 
-        driver.findElement(By.id("newProjectForm-t-6")).click();
+    Thread.sleep(2000);
+        }
+    driver.findElement(By.id("newProjectForm-t-6")).click();
 
-        Thread.sleep(2000);
+    Thread.sleep(2000);
 
         driver.findElement(By.xpath("//*[@id=\"projectInfoSectorTable\"]/tbody/tr[1]/td[2]/div/label[2]")).click();
         driver.findElement(By.xpath("/html/body/div[2]/div/div[3]/button[1]")).click();
@@ -342,9 +343,9 @@ public class yeni_proje_ekleme {
 
         driver.findElement(By.xpath("//*[@id=\"projectExpectedDataTab\"]/div[1]/div[3]/div[2]")).sendKeys("Projeden Beklenen Veriler Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.");
 
-        Thread.sleep(2000);
+        Thread.sleep(3000);
 
-        driver.findElement(By.xpath("/html/body/div/div[2]/div/div[2]/div/div/div/div/div[2]/section[8]/form/div/div/div/div[2]/div[4]/div[2]/div[2]/button")).click();
+        driver.findElement(By.xpath("/html/body/div/div[2]/div/div[2]/div/div/div/div/div[2]/section[8]/form/div/div/div/div[3]/div[4]/div[2]/div[2]/button")).click();
 
         Thread.sleep(2000);
 
